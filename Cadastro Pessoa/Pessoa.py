@@ -30,14 +30,14 @@ class PessoaFisica(Pessoa):
         self.dataNascimento = dataNascimento
 
     def calcularImposto(self, rendimento: float) -> float:
-        if rendimento <= 1500:
+        if rendimento <= 10500:
             return 0
-        elif 1500 < rendimento <= 3500:
-            return (rendimento / 100) * 2
-        elif 3500 < rendimento <= 6000:
-            return (rendimento / 100) * 3.5
-        else:
+        elif 10500 < rendimento <= 30500:
             return (rendimento / 100) * 5
+        elif 30500 < rendimento <= 60000:
+            return (rendimento / 100) * 8
+        else:
+            return (rendimento / 100) * 12
 
 class PessoaJuridica(Pessoa):
     def __init__(self, nome="", rendimento=0.0, endereco=None, cnpj="", dataNascimento=""):
