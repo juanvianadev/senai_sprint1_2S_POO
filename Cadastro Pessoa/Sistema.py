@@ -108,7 +108,7 @@ def main():
 
         if opcao == 2:
             while True:
-                opcaoJ = int(input("Escolha uma opcao: 1 - Cadastrar Pessoa Juridica / 2 - Listar Pessoa Juridica / 3 - Excluir Pessoa Juridica / 0 - Para voltar o menu "))
+                opcaoJ = int(input("Escolha uma opcao: 1 - Cadastrar Pessoa Juridica / 2 - Listar Pessoa Juridica / 3 - Excluir Pessoa Juridica / 4 - Alterar Item Pessoa Juridica / 0 - Para voltar o menu "))
                 if opcaoJ == 1:
                     novaJ = PessoaJuridica()
                     novoEnderecoJ = Endereco()
@@ -166,7 +166,7 @@ def main():
                     if not pessoaEncontrada:       
                         print("Nenhuma pessoa encontrada")
 
-                elif opcaoPF == 4:
+                elif opcaoJ == 4:
                     print("Atualizar o os items")
                     pessoaEncontrada = False
 
